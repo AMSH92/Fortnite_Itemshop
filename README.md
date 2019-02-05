@@ -1,6 +1,7 @@
 # Fortnite_Itemshop
 
 ##ABOUT
+
 This is an iOS app tracks fortnite daily item shop. Its not completed yet.
 
 ![screen shot 1440-05-30 at 8 46 00 am](https://user-images.githubusercontent.com/19398043/52255879-7382ee00-2925-11e9-8dab-4e05644066e4.png)
