@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fortnite.ttf">
+            <string>BurbankBigCondensed-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="challangesCell" id="ssq-5I-bdH" customClass="itemsColelctionView" customModule="FortniteItemShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="463" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fortnite-br-challenges-star" translatesAutoresizingMaskIntoConstraints="NO" id="XZd-1x-7TS">
+                        <rect key="frame" x="18" y="10" width="76" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="76" id="E64-va-rnI"/>
+                            <constraint firstAttribute="height" constant="71" id="MNO-lW-ikP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEKLY CHALLANGES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3i-bL-lAX">
+                        <rect key="frame" x="105" y="29" width="216" height="30"/>
+                        <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="30"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.17148535990504488" green="0.35570993300520992" blue="0.84753727791878175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XZd-1x-7TS" firstAttribute="top" secondItem="ssq-5I-bdH" secondAttribute="top" constant="10" id="41N-fL-Y16"/>
+                <constraint firstItem="I3i-bL-lAX" firstAttribute="top" secondItem="ssq-5I-bdH" secondAttribute="top" constant="29" id="5V3-7W-Aus"/>
+                <constraint firstItem="I3i-bL-lAX" firstAttribute="leading" secondItem="XZd-1x-7TS" secondAttribute="trailing" constant="11" id="I3W-Jc-WRf"/>
+                <constraint firstItem="XZd-1x-7TS" firstAttribute="leading" secondItem="ssq-5I-bdH" secondAttribute="leading" constant="18" id="OYU-8H-TVf"/>
+                <constraint firstAttribute="bottom" secondItem="XZd-1x-7TS" secondAttribute="bottom" constant="9" id="rvp-ky-8MQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="nfg-X8-rWj"/>
+            <size key="customSize" width="463" height="99"/>
+            <point key="canvasLocation" x="-26.399999999999999" y="49.475262368815599"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fortnite-br-challenges-star" width="401" height="365"/>
+    </resources>
+</document>

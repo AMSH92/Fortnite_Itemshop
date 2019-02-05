@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fortnite.ttf">
+            <string>BurbankBigCondensed-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="detialsCell" id="mYI-jH-YjY" customClass="ChallangesDetials" customModule="FortniteItemShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="157"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="157"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0I4-Hx-CDo" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                        <rect key="frame" x="7" y="31" width="417" height="114"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Play matches with at least o" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-f9-0fo">
+                                <rect key="frame" x="9" y="8" width="307.5" height="27"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWU-Pi-R4h">
+                                <rect key="frame" x="11" y="43" width="42.5" height="36"/>
+                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taY-cH-9A6" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                                <rect key="frame" x="62" y="56.5" width="267" height="9"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="9" id="62Q-Nh-qcM"/>
+                                    <constraint firstAttribute="width" constant="267" id="DQ6-Kr-yqZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uS1-mb-cNt">
+                                <rect key="frame" x="348" y="0.0" width="69" height="114"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="rTg-nF-fs2"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="4l7-vb-uXm">
+                                <rect key="frame" x="356" y="12.5" width="53" height="89"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fortnite-br-challenges-star" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-XN-Nue">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="53" id="ZFR-eR-vhc"/>
+                                            <constraint firstAttribute="height" constant="47" id="iMf-ch-V4J"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVf-6t-xJh">
+                                        <rect key="frame" x="0.0" y="58" width="53" height="31"/>
+                                        <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="31"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Hard)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7z-Kn-SDa">
+                                <rect key="frame" x="282.5" y="36.5" width="46.5" height="18"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1714853599" green="0.35570993299999998" blue="0.8475372779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uS1-mb-cNt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EC2-f9-0fo" secondAttribute="trailing" constant="3" id="58R-eZ-10y"/>
+                            <constraint firstItem="uS1-mb-cNt" firstAttribute="leading" secondItem="V7z-Kn-SDa" secondAttribute="trailing" constant="19" id="9dV-4e-lWk"/>
+                            <constraint firstItem="fWU-Pi-R4h" firstAttribute="leading" secondItem="0I4-Hx-CDo" secondAttribute="leading" constant="11" id="Bcn-v6-B5c"/>
+                            <constraint firstAttribute="trailing" secondItem="4l7-vb-uXm" secondAttribute="trailing" constant="8" id="F6M-35-gCR"/>
+                            <constraint firstItem="taY-cH-9A6" firstAttribute="top" secondItem="EC2-f9-0fo" secondAttribute="bottom" constant="21.5" id="GTa-lT-X5Y"/>
+                            <constraint firstItem="taY-cH-9A6" firstAttribute="leading" secondItem="fWU-Pi-R4h" secondAttribute="trailing" constant="8.5" id="MQh-5m-Czh"/>
+                            <constraint firstAttribute="bottom" secondItem="uS1-mb-cNt" secondAttribute="bottom" id="MlL-Ug-Txc"/>
+                            <constraint firstItem="4l7-vb-uXm" firstAttribute="centerY" secondItem="0I4-Hx-CDo" secondAttribute="centerY" id="OVa-jG-d6e"/>
+                            <constraint firstItem="taY-cH-9A6" firstAttribute="top" secondItem="V7z-Kn-SDa" secondAttribute="bottom" constant="2" id="P2t-Rj-cRZ"/>
+                            <constraint firstItem="uS1-mb-cNt" firstAttribute="top" secondItem="0I4-Hx-CDo" secondAttribute="top" id="RXN-dF-Zjs"/>
+                            <constraint firstItem="uS1-mb-cNt" firstAttribute="leading" secondItem="taY-cH-9A6" secondAttribute="trailing" constant="19" id="T3n-iw-TST"/>
+                            <constraint firstItem="EC2-f9-0fo" firstAttribute="leading" secondItem="0I4-Hx-CDo" secondAttribute="leading" constant="9" id="ZUF-fh-j9x"/>
+                            <constraint firstItem="V7z-Kn-SDa" firstAttribute="top" secondItem="EC2-f9-0fo" secondAttribute="bottom" constant="1.5" id="aet-yt-gYu"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="taY-cH-9A6" secondAttribute="bottom" constant="22" id="eSe-pY-QS8"/>
+                            <constraint firstItem="fWU-Pi-R4h" firstAttribute="top" secondItem="EC2-f9-0fo" secondAttribute="bottom" constant="8" id="emy-Bd-0mr"/>
+                            <constraint firstItem="EC2-f9-0fo" firstAttribute="top" secondItem="0I4-Hx-CDo" secondAttribute="top" constant="8" id="n13-Vi-1Nj"/>
+                            <constraint firstAttribute="trailing" secondItem="uS1-mb-cNt" secondAttribute="trailing" id="wt6-4V-FMB"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fWU-Pi-R4h" secondAttribute="bottom" constant="8.5" id="zYl-Ml-Ojt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.81763309240000004" green="0.31750903949999998" blue="0.3493445396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.1714853599" green="0.35570993299999998" blue="0.8475372779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0I4-Hx-CDo" secondAttribute="bottom" constant="12" id="Nb4-jM-WpD"/>
+                <constraint firstAttribute="trailing" secondItem="0I4-Hx-CDo" secondAttribute="trailing" constant="7" id="Qjr-3a-21G"/>
+                <constraint firstItem="0I4-Hx-CDo" firstAttribute="leading" secondItem="mYI-jH-YjY" secondAttribute="leading" constant="7" id="URt-2H-OEo"/>
+                <constraint firstItem="0I4-Hx-CDo" firstAttribute="top" secondItem="mYI-jH-YjY" secondAttribute="top" constant="31" id="wme-aU-9r5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="K8R-YL-yFG"/>
+            <size key="customSize" width="449" height="157"/>
+            <connections>
+                <outlet property="challange" destination="EC2-f9-0fo" id="PmJ-9A-2bP"/>
+                <outlet property="hard" destination="V7z-Kn-SDa" id="h59-QD-pbl"/>
+                <outlet property="starts" destination="KVf-6t-xJh" id="aR6-SK-Uty"/>
+                <outlet property="total" destination="fWU-Pi-R4h" id="4EJ-79-8Oa"/>
+            </connections>
+            <point key="canvasLocation" x="-130.40000000000001" y="43.628185907046479"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fortnite-br-challenges-star" width="401" height="365"/>
+    </resources>
+</document>

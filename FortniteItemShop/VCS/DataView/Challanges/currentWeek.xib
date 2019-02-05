@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fortnite.ttf">
+            <string>BurbankBigCondensed-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="currentWeekCell" id="5yz-cx-EuK" customClass="ChallangesCollectionCell" customModule="FortniteItemShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="423" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VE2-oO-Nud" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                        <rect key="frame" x="8" y="10" width="407" height="110"/>
+                        <subviews>
+                            <view alpha="0.55000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVT-bY-ESV">
+                                <rect key="frame" x="0.0" y="0.0" width="91" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEK " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVy-sh-daw">
+                                        <rect key="frame" x="3.5" y="43" width="84.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="41"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lVy-sh-daw" firstAttribute="top" secondItem="cVT-bY-ESV" secondAttribute="top" constant="43" id="1LW-Fe-3eW"/>
+                                    <constraint firstAttribute="height" constant="110" id="9yl-dJ-BHp"/>
+                                    <constraint firstAttribute="width" constant="91" id="OO8-ij-Ltg"/>
+                                    <constraint firstItem="lVy-sh-daw" firstAttribute="centerX" secondItem="cVT-bY-ESV" secondAttribute="centerX" id="hYa-nb-Zg9"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6C-td-Wvl">
+                                <rect key="frame" x="20.5" y="87" width="50.5" height="60"/>
+                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="V50-iR-p4q">
+                                <rect key="frame" x="101" y="52" width="170" height="6"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1P-1U-Yix" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="6"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="PAN-0l-oNb"/>
+                                            <constraint firstAttribute="width" constant="25" id="cfv-FB-kVj"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Omv-in-j88" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                                        <rect key="frame" x="29" y="0.0" width="25" height="6"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="9jQ-rh-LzK"/>
+                                            <constraint firstAttribute="width" constant="25" id="XMB-2z-GGW"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQT-8h-TM8" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                                        <rect key="frame" x="58" y="0.0" width="25" height="6"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="SY2-s0-Yfi"/>
+                                            <constraint firstAttribute="height" constant="6" id="xYE-1s-3lX"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lt9-NT-tQ6" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                                        <rect key="frame" x="87" y="0.0" width="25" height="6"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="CLN-2Q-ZYt"/>
+                                            <constraint firstAttribute="height" constant="6" id="RiV-Yh-2wi"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MoO-5c-0Ot" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                                        <rect key="frame" x="116" y="0.0" width="25" height="6"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="Ul3-eD-rfh"/>
+                                            <constraint firstAttribute="width" constant="25" id="Vl9-3a-eIW"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPN-yY-lVj" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                                        <rect key="frame" x="145" y="0.0" width="25" height="6"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="TvF-lU-LoX"/>
+                                            <constraint firstAttribute="height" constant="6" id="hDR-Kq-57j"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fortnite-br-challenges-star" translatesAutoresizingMaskIntoConstraints="NO" id="yk0-4S-0b3">
+                                <rect key="frame" x="339" y="27" width="60" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="DHf-5r-IOd"/>
+                                    <constraint firstAttribute="width" constant="60" id="GDF-zI-fMU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1714853599" green="0.35570993299999998" blue="0.8475372779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T6C-td-Wvl" firstAttribute="top" secondItem="lVy-sh-daw" secondAttribute="bottom" constant="3" id="8Yh-F5-9kL"/>
+                            <constraint firstAttribute="trailing" secondItem="yk0-4S-0b3" secondAttribute="trailing" constant="8" id="F0h-Mh-0x4"/>
+                            <constraint firstItem="V50-iR-p4q" firstAttribute="centerY" secondItem="VE2-oO-Nud" secondAttribute="centerY" id="L1s-rf-mqW"/>
+                            <constraint firstItem="cVT-bY-ESV" firstAttribute="top" secondItem="VE2-oO-Nud" secondAttribute="top" id="LfG-Cu-Vss"/>
+                            <constraint firstItem="cVT-bY-ESV" firstAttribute="leading" secondItem="VE2-oO-Nud" secondAttribute="leading" id="V7O-SX-Kh6"/>
+                            <constraint firstAttribute="bottom" secondItem="cVT-bY-ESV" secondAttribute="bottom" id="VYg-3E-Wdz"/>
+                            <constraint firstItem="T6C-td-Wvl" firstAttribute="centerX" secondItem="lVy-sh-daw" secondAttribute="centerX" id="Xey-YS-SOB"/>
+                            <constraint firstItem="yk0-4S-0b3" firstAttribute="centerY" secondItem="VE2-oO-Nud" secondAttribute="centerY" id="pHu-xR-cce"/>
+                            <constraint firstItem="V50-iR-p4q" firstAttribute="leading" secondItem="cVT-bY-ESV" secondAttribute="trailing" constant="10" id="vfy-CD-IPZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.81763309240341187" green="0.31750903951936849" blue="0.34934453961668754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.8475372779" green="0.3214465410304998" blue="0.37042697170583072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowX">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowY">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VE2-oO-Nud" firstAttribute="top" secondItem="5yz-cx-EuK" secondAttribute="top" constant="10" id="EDZ-QJ-TWs"/>
+                <constraint firstAttribute="trailing" secondItem="VE2-oO-Nud" secondAttribute="trailing" constant="8" id="SOb-tA-vet"/>
+                <constraint firstItem="VE2-oO-Nud" firstAttribute="leading" secondItem="5yz-cx-EuK" secondAttribute="leading" constant="8" id="Vl5-jv-SQI"/>
+                <constraint firstAttribute="bottom" secondItem="VE2-oO-Nud" secondAttribute="bottom" constant="11" id="hqL-tt-8KX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Rvr-HG-u7a"/>
+            <size key="customSize" width="423" height="131"/>
+            <connections>
+                <outlet property="currentWeek" destination="T6C-td-Wvl" id="jkY-cp-vVm"/>
+                <outlet property="mainView" destination="VE2-oO-Nud" id="43s-Sp-1qB"/>
+                <outlet property="weekLabel" destination="lVy-sh-daw" id="IvR-dW-Ka6"/>
+            </connections>
+            <point key="canvasLocation" x="-605.60000000000002" y="61.619190404797607"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fortnite-br-challenges-star" width="401" height="365"/>
+    </resources>
+</document>

@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B848ED2721F584DB00F126FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED2621F584DB00F126FE /* AppDelegate.swift */; };
+		B848ED2921F584DB00F126FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED2821F584DB00F126FE /* ViewController.swift */; };
+		B848ED2C21F584DB00F126FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B848ED2A21F584DB00F126FE /* Main.storyboard */; };
+		B848ED2F21F584DB00F126FE /* FortniteItemShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B848ED2D21F584DB00F126FE /* FortniteItemShop.xcdatamodeld */; };
+		B848ED3121F584E300F126FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B848ED3021F584E300F126FE /* Assets.xcassets */; };
+		B848ED3421F584E300F126FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B848ED3221F584E300F126FE /* LaunchScreen.storyboard */; };
+		B848ED4521F5907F00F126FE /* currentItems.xib in Resources */ = {isa = PBXBuildFile; fileRef = B848ED4421F5907F00F126FE /* currentItems.xib */; };
+		B848ED4721F592FB00F126FE /* today.xib in Resources */ = {isa = PBXBuildFile; fileRef = B848ED4621F592FB00F126FE /* today.xib */; };
+		B848ED4921F5A0B000F126FE /* Todaysitemshop.xib in Resources */ = {isa = PBXBuildFile; fileRef = B848ED4821F5A0B000F126FE /* Todaysitemshop.xib */; };
+		B848ED4B21F5AD0B00F126FE /* challenges.xib in Resources */ = {isa = PBXBuildFile; fileRef = B848ED4A21F5AD0B00F126FE /* challenges.xib */; };
+		B848ED4F21F5B40500F126FE /* comingItems.xib in Resources */ = {isa = PBXBuildFile; fileRef = B848ED4E21F5B40500F126FE /* comingItems.xib */; };
+		B848ED5121F5B6AC00F126FE /* status.xib in Resources */ = {isa = PBXBuildFile; fileRef = B848ED5021F5B6AC00F126FE /* status.xib */; };
+		B848ED5321F5B91500F126FE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED5221F5B91500F126FE /* API.swift */; };
+		B848ED5721F5B9BC00F126FE /* AlamoFireJSONClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED5521F5B9BB00F126FE /* AlamoFireJSONClient.swift */; };
+		B848ED5821F5B9BC00F126FE /* AlamofireEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED5621F5B9BC00F126FE /* AlamofireEndPoint.swift */; };
+		B848ED5A21F5B9CB00F126FE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED5921F5B9CB00F126FE /* NetworkingError.swift */; };
+		B848ED5E21F5B9D600F126FE /* PlanetsJSONClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED5B21F5B9D600F126FE /* PlanetsJSONClient.swift */; };
+		B848ED5F21F5B9D600F126FE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED5C21F5B9D600F126FE /* Result.swift */; };
+		B848ED6021F5B9D600F126FE /* PlanetEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED5D21F5B9D600F126FE /* PlanetEndPoint.swift */; };
+		B848ED6221F5B9E000F126FE /* StarwarsJSONClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED6121F5B9E000F126FE /* StarwarsJSONClientProtocol.swift */; };
+		B848ED6621F5C50000F126FE /* DailyItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED6521F5C50000F126FE /* DailyItemsViewController.swift */; };
+		B848ED6921F5C57700F126FE /* dailyItems.xib in Resources */ = {isa = PBXBuildFile; fileRef = B848ED6721F5C51200F126FE /* dailyItems.xib */; };
+		B848ED6C21F5C6BA00F126FE /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848ED6B21F5C6BA00F126FE /* Protocols.swift */; };
+		B86D412421F6E54200561663 /* dailyImages.xib in Resources */ = {isa = PBXBuildFile; fileRef = B86D412221F6E4E500561663 /* dailyImages.xib */; };
+		B86D412721F6FE9000561663 /* challanges.xib in Resources */ = {isa = PBXBuildFile; fileRef = B86D412621F6FE9000561663 /* challanges.xib */; };
+		B86D412A21F6FF3700561663 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86D412921F6FF3700561663 /* GradientView.swift */; };
+		B86D412C21F7043000561663 /* challangesDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B86D412B21F7043000561663 /* challangesDataCell.xib */; };
+		B86D412E21F7080800561663 /* ChallangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86D412D21F7080800561663 /* ChallangesViewController.swift */; };
+		B86D412F21F72B5200561663 /* fortnite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B86D412821F6FEE300561663 /* fortnite.ttf */; };
+		B86D413321F733D600561663 /* ViewChallangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86D413221F733D600561663 /* ViewChallangeViewController.swift */; };
+		B8E7E52E21F82B4B001221B8 /* currentWeek.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8E7E52D21F82B4B001221B8 /* currentWeek.xib */; };
+		B8E7E53021F82CF4001221B8 /* title.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8E7E52F21F82CF4001221B8 /* title.xib */; };
+		DD95623755106AAA2F784E80 /* Pods_FortniteItemShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9107DDB295C8F241FFDB7552 /* Pods_FortniteItemShop.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CFA07B4BEC0BCF5513347B3 /* Pods-FortniteItemShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteItemShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteItemShop/Pods-FortniteItemShop.release.xcconfig"; sourceTree = "<group>"; };
+		40E23B89F93D76DDDC5FE2C8 /* Pods-FortniteItemShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FortniteItemShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FortniteItemShop/Pods-FortniteItemShop.debug.xcconfig"; sourceTree = "<group>"; };
+		9107DDB295C8F241FFDB7552 /* Pods_FortniteItemShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FortniteItemShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B848ED2321F584DB00F126FE /* FortniteItemShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortniteItemShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B848ED2621F584DB00F126FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B848ED2821F584DB00F126FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B848ED2B21F584DB00F126FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B848ED2E21F584DB00F126FE /* FortniteItemShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FortniteItemShop.xcdatamodel; sourceTree = "<group>"; };
+		B848ED3021F584E300F126FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B848ED3321F584E300F126FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B848ED3521F584E300F126FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B848ED4421F5907F00F126FE /* currentItems.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = currentItems.xib; sourceTree = "<group>"; };
+		B848ED4621F592FB00F126FE /* today.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = today.xib; sourceTree = "<group>"; };
+		B848ED4821F5A0B000F126FE /* Todaysitemshop.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Todaysitemshop.xib; sourceTree = "<group>"; };
+		B848ED4A21F5AD0B00F126FE /* challenges.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = challenges.xib; sourceTree = "<group>"; };
+		B848ED4E21F5B40500F126FE /* comingItems.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = comingItems.xib; sourceTree = "<group>"; };
+		B848ED5021F5B6AC00F126FE /* status.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = status.xib; sourceTree = "<group>"; };
+		B848ED5221F5B91500F126FE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B848ED5521F5B9BB00F126FE /* AlamoFireJSONClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamoFireJSONClient.swift; sourceTree = "<group>"; };
+		B848ED5621F5B9BC00F126FE /* AlamofireEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireEndPoint.swift; sourceTree = "<group>"; };
+		B848ED5921F5B9CB00F126FE /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		B848ED5B21F5B9D600F126FE /* PlanetsJSONClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetsJSONClient.swift; sourceTree = "<group>"; };
+		B848ED5C21F5B9D600F126FE /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B848ED5D21F5B9D600F126FE /* PlanetEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetEndPoint.swift; sourceTree = "<group>"; };
+		B848ED6121F5B9E000F126FE /* StarwarsJSONClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarwarsJSONClientProtocol.swift; sourceTree = "<group>"; };
+		B848ED6521F5C50000F126FE /* DailyItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyItemsViewController.swift; sourceTree = "<group>"; };
+		B848ED6721F5C51200F126FE /* dailyItems.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dailyItems.xib; sourceTree = "<group>"; };
+		B848ED6B21F5C6BA00F126FE /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		B86D412221F6E4E500561663 /* dailyImages.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dailyImages.xib; sourceTree = "<group>"; };
+		B86D412621F6FE9000561663 /* challanges.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = challanges.xib; sourceTree = "<group>"; };
+		B86D412821F6FEE300561663 /* fortnite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = fortnite.ttf; sourceTree = "<group>"; };
+		B86D412921F6FF3700561663 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		B86D412B21F7043000561663 /* challangesDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = challangesDataCell.xib; sourceTree = "<group>"; };
+		B86D412D21F7080800561663 /* ChallangesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangesViewController.swift; sourceTree = "<group>"; };
+		B86D413221F733D600561663 /* ViewChallangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChallangeViewController.swift; sourceTree = "<group>"; };
+		B8E7E52D21F82B4B001221B8 /* currentWeek.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = currentWeek.xib; sourceTree = "<group>"; };
+		B8E7E52F21F82CF4001221B8 /* title.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = title.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B848ED2021F584DB00F126FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD95623755106AAA2F784E80 /* Pods_FortniteItemShop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98AC6A49B0689D815ADECAAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40E23B89F93D76DDDC5FE2C8 /* Pods-FortniteItemShop.debug.xcconfig */,
+				1CFA07B4BEC0BCF5513347B3 /* Pods-FortniteItemShop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B848ED1A21F584DB00F126FE = {
+			isa = PBXGroup;
+			children = (
+				B86D412821F6FEE300561663 /* fortnite.ttf */,
+				B848ED2521F584DB00F126FE /* FortniteItemShop */,
+				B848ED2421F584DB00F126FE /* Products */,
+				98AC6A49B0689D815ADECAAB /* Pods */,
+				CCD1A54C6681F6DBD728E762 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B848ED2421F584DB00F126FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B848ED2321F584DB00F126FE /* FortniteItemShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B848ED2521F584DB00F126FE /* FortniteItemShop */ = {
+			isa = PBXGroup;
+			children = (
+				B848ED5421F5B99A00F126FE /* Config */,
+				B848ED3B21F584F600F126FE /* VCS */,
+				B848ED2621F584DB00F126FE /* AppDelegate.swift */,
+				B848ED3021F584E300F126FE /* Assets.xcassets */,
+				B848ED3221F584E300F126FE /* LaunchScreen.storyboard */,
+				B848ED3521F584E300F126FE /* Info.plist */,
+				B848ED2D21F584DB00F126FE /* FortniteItemShop.xcdatamodeld */,
+			);
+			path = FortniteItemShop;
+			sourceTree = "<group>";
+		};
+		B848ED3B21F584F600F126FE /* VCS */ = {
+			isa = PBXGroup;
+			children = (
+				B848ED6A21F5C69800F126FE /* Protocols */,
+				B848ED6321F5C4E200F126FE /* DataView */,
+				B848ED3C21F584FF00F126FE /* MainView */,
+			);
+			path = VCS;
+			sourceTree = "<group>";
+		};
+		B848ED3C21F584FF00F126FE /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				B848ED2A21F584DB00F126FE /* Main.storyboard */,
+				B848ED2821F584DB00F126FE /* ViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		B848ED3D21F5850B00F126FE /* CELLS */ = {
+			isa = PBXGroup;
+			children = (
+				B848ED3E21F5851B00F126FE /* MainViewCells */,
+			);
+			path = CELLS;
+			sourceTree = "<group>";
+		};
+		B848ED3E21F5851B00F126FE /* MainViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B848ED4421F5907F00F126FE /* currentItems.xib */,
+				B848ED4621F592FB00F126FE /* today.xib */,
+				B848ED4821F5A0B000F126FE /* Todaysitemshop.xib */,
+				B848ED4A21F5AD0B00F126FE /* challenges.xib */,
+				B848ED4E21F5B40500F126FE /* comingItems.xib */,
+				B848ED5021F5B6AC00F126FE /* status.xib */,
+			);
+			path = MainViewCells;
+			sourceTree = "<group>";
+		};
+		B848ED5421F5B99A00F126FE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B86D412921F6FF3700561663 /* GradientView.swift */,
+				B848ED5221F5B91500F126FE /* API.swift */,
+				B848ED5621F5B9BC00F126FE /* AlamofireEndPoint.swift */,
+				B848ED5521F5B9BB00F126FE /* AlamoFireJSONClient.swift */,
+				B848ED5921F5B9CB00F126FE /* NetworkingError.swift */,
+				B848ED5D21F5B9D600F126FE /* PlanetEndPoint.swift */,
+				B848ED5B21F5B9D600F126FE /* PlanetsJSONClient.swift */,
+				B848ED6121F5B9E000F126FE /* StarwarsJSONClientProtocol.swift */,
+				B848ED5C21F5B9D600F126FE /* Result.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B848ED6321F5C4E200F126FE /* DataView */ = {
+			isa = PBXGroup;
+			children = (
+				B86D412521F6FE8300561663 /* Challanges */,
+				B848ED6421F5C4EC00F126FE /* DailyItems */,
+			);
+			path = DataView;
+			sourceTree = "<group>";
+		};
+		B848ED6421F5C4EC00F126FE /* DailyItems */ = {
+			isa = PBXGroup;
+			children = (
+				B848ED3D21F5850B00F126FE /* CELLS */,
+				B848ED6521F5C50000F126FE /* DailyItemsViewController.swift */,
+				B848ED6721F5C51200F126FE /* dailyItems.xib */,
+				B86D412221F6E4E500561663 /* dailyImages.xib */,
+			);
+			path = DailyItems;
+			sourceTree = "<group>";
+		};
+		B848ED6A21F5C69800F126FE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B848ED6B21F5C6BA00F126FE /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B86D412521F6FE8300561663 /* Challanges */ = {
+			isa = PBXGroup;
+			children = (
+				B86D412621F6FE9000561663 /* challanges.xib */,
+				B86D412B21F7043000561663 /* challangesDataCell.xib */,
+				B86D412D21F7080800561663 /* ChallangesViewController.swift */,
+				B86D413221F733D600561663 /* ViewChallangeViewController.swift */,
+				B8E7E52D21F82B4B001221B8 /* currentWeek.xib */,
+				B8E7E52F21F82CF4001221B8 /* title.xib */,
+			);
+			path = Challanges;
+			sourceTree = "<group>";
+		};
+		CCD1A54C6681F6DBD728E762 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9107DDB295C8F241FFDB7552 /* Pods_FortniteItemShop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B848ED2221F584DB00F126FE /* FortniteItemShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B848ED3821F584E300F126FE /* Build configuration list for PBXNativeTarget "FortniteItemShop" */;
+			buildPhases = (
+				DE1E8B7594D9F3977F7DF4E1 /* [CP] Check Pods Manifest.lock */,
+				B848ED1F21F584DB00F126FE /* Sources */,
+				B848ED2021F584DB00F126FE /* Frameworks */,
+				B848ED2121F584DB00F126FE /* Resources */,
+				1ED80882D38D9DBEF8100EBA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FortniteItemShop;
+			productName = FortniteItemShop;
+			productReference = B848ED2321F584DB00F126FE /* FortniteItemShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B848ED1B21F584DB00F126FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Alsharif;
+				TargetAttributes = {
+					B848ED2221F584DB00F126FE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = B848ED1E21F584DB00F126FE /* Build configuration list for PBXProject "FortniteItemShop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B848ED1A21F584DB00F126FE;
+			productRefGroup = B848ED2421F584DB00F126FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B848ED2221F584DB00F126FE /* FortniteItemShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B848ED2121F584DB00F126FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B848ED5121F5B6AC00F126FE /* status.xib in Resources */,
+				B8E7E53021F82CF4001221B8 /* title.xib in Resources */,
+				B86D412421F6E54200561663 /* dailyImages.xib in Resources */,
+				B848ED4521F5907F00F126FE /* currentItems.xib in Resources */,
+				B848ED6921F5C57700F126FE /* dailyItems.xib in Resources */,
+				B848ED3421F584E300F126FE /* LaunchScreen.storyboard in Resources */,
+				B86D412F21F72B5200561663 /* fortnite.ttf in Resources */,
+				B848ED4921F5A0B000F126FE /* Todaysitemshop.xib in Resources */,
+				B86D412721F6FE9000561663 /* challanges.xib in Resources */,
+				B848ED3121F584E300F126FE /* Assets.xcassets in Resources */,
+				B848ED4B21F5AD0B00F126FE /* challenges.xib in Resources */,
+				B848ED2C21F584DB00F126FE /* Main.storyboard in Resources */,
+				B86D412C21F7043000561663 /* challangesDataCell.xib in Resources */,
+				B848ED4721F592FB00F126FE /* today.xib in Resources */,
+				B848ED4F21F5B40500F126FE /* comingItems.xib in Resources */,
+				B8E7E52E21F82B4B001221B8 /* currentWeek.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ED80882D38D9DBEF8100EBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FortniteItemShop/Pods-FortniteItemShop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CenteredCollectionView/CenteredCollectionView.framework",
+				"${BUILT_PRODUCTS_DIR}/DeckTransition/DeckTransition.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CenteredCollectionView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeckTransition.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FortniteItemShop/Pods-FortniteItemShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE1E8B7594D9F3977F7DF4E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FortniteItemShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B848ED1F21F584DB00F126FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B848ED5F21F5B9D600F126FE /* Result.swift in Sources */,
+				B848ED6621F5C50000F126FE /* DailyItemsViewController.swift in Sources */,
+				B848ED6221F5B9E000F126FE /* StarwarsJSONClientProtocol.swift in Sources */,
+				B848ED2921F584DB00F126FE /* ViewController.swift in Sources */,
+				B86D412A21F6FF3700561663 /* GradientView.swift in Sources */,
+				B848ED6021F5B9D600F126FE /* PlanetEndPoint.swift in Sources */,
+				B86D412E21F7080800561663 /* ChallangesViewController.swift in Sources */,
+				B848ED5821F5B9BC00F126FE /* AlamofireEndPoint.swift in Sources */,
+				B848ED5E21F5B9D600F126FE /* PlanetsJSONClient.swift in Sources */,
+				B848ED2F21F584DB00F126FE /* FortniteItemShop.xcdatamodeld in Sources */,
+				B848ED5A21F5B9CB00F126FE /* NetworkingError.swift in Sources */,
+				B848ED6C21F5C6BA00F126FE /* Protocols.swift in Sources */,
+				B848ED5321F5B91500F126FE /* API.swift in Sources */,
+				B848ED5721F5B9BC00F126FE /* AlamoFireJSONClient.swift in Sources */,
+				B848ED2721F584DB00F126FE /* AppDelegate.swift in Sources */,
+				B86D413321F733D600561663 /* ViewChallangeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B848ED2A21F584DB00F126FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B848ED2B21F584DB00F126FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B848ED3221F584E300F126FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B848ED3321F584E300F126FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B848ED3621F584E300F126FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B848ED3721F584E300F126FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B848ED3921F584E300F126FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E23B89F93D76DDDC5FE2C8 /* Pods-FortniteItemShop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KNU45H2KW;
+				INFOPLIST_FILE = FortniteItemShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itemshop.Alsharif.FortniteItemShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B848ED3A21F584E300F126FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CFA07B4BEC0BCF5513347B3 /* Pods-FortniteItemShop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6KNU45H2KW;
+				INFOPLIST_FILE = FortniteItemShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.itemshop.Alsharif.FortniteItemShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B848ED1E21F584DB00F126FE /* Build configuration list for PBXProject "FortniteItemShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B848ED3621F584E300F126FE /* Debug */,
+				B848ED3721F584E300F126FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B848ED3821F584E300F126FE /* Build configuration list for PBXNativeTarget "FortniteItemShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B848ED3921F584E300F126FE /* Debug */,
+				B848ED3A21F584E300F126FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B848ED2D21F584DB00F126FE /* FortniteItemShop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B848ED2E21F584DB00F126FE /* FortniteItemShop.xcdatamodel */,
+			);
+			currentVersion = B848ED2E21F584DB00F126FE /* FortniteItemShop.xcdatamodel */;
+			path = FortniteItemShop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B848ED1B21F584DB00F126FE /* Project object */;
+}

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QLa-lk-nsm">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="fortnite.ttf">
+            <string>BurbankBigCondensed-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FortniteItemShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UHt-y2-5eg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="12" id="vpq-D3-iAV">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UHt-y2-5eg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dtm-bH-j1s"/>
+                            <constraint firstItem="UHt-y2-5eg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V5a-Bv-GjH"/>
+                            <constraint firstItem="UHt-y2-5eg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rhi-Am-vQM"/>
+                            <constraint firstAttribute="bottom" secondItem="UHt-y2-5eg" secondAttribute="bottom" id="viw-rB-H3l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v1H-67-G3p"/>
+                    <connections>
+                        <outlet property="collectionView" destination="UHt-y2-5eg" id="5jJ-W6-A5C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="133.92857142857142"/>
+        </scene>
+        <!--Daily Items View Controller-->
+        <scene sceneID="WkX-bl-xjC">
+            <objects>
+                <viewController storyboardIdentifier="DailyItemsViewController" id="7g2-Rc-g1Y" customClass="DailyItemsViewController" customModule="FortniteItemShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cK5-lv-GiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lFb-eu-jdO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" red="0.94257614213197971" green="0.94257614213197971" blue="0.94257614213197971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i5B-7O-el0">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lFb-eu-jdO" firstAttribute="trailing" secondItem="1Mb-0V-Ax5" secondAttribute="trailing" id="0YH-jG-dvr"/>
+                            <constraint firstAttribute="bottom" secondItem="lFb-eu-jdO" secondAttribute="bottom" id="17C-Si-V7f"/>
+                            <constraint firstItem="lFb-eu-jdO" firstAttribute="top" secondItem="1Mb-0V-Ax5" secondAttribute="top" id="QNQ-QY-n7S"/>
+                            <constraint firstItem="lFb-eu-jdO" firstAttribute="leading" secondItem="1Mb-0V-Ax5" secondAttribute="leading" id="pXa-tb-5GW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Mb-0V-Ax5"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NLd-FK-irZ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="lFb-eu-jdO" id="A2R-5V-x5M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w64-Um-U5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2713" y="134"/>
+        </scene>
+        <!--Challanges View Controller-->
+        <scene sceneID="72Z-k7-mmQ">
+            <objects>
+                <viewController storyboardIdentifier="ChallangesViewController" id="lFF-OA-ST4" customClass="ChallangesViewController" customModule="FortniteItemShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9xH-GT-dF3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Nr8-x8-Tba">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Rpm-TM-SYw">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Nr8-x8-Tba" secondAttribute="bottom" id="ZWD-i5-uv7"/>
+                            <constraint firstItem="Nr8-x8-Tba" firstAttribute="leading" secondItem="aEi-tB-H6P" secondAttribute="leading" id="ZYy-R7-msM"/>
+                            <constraint firstItem="Nr8-x8-Tba" firstAttribute="top" secondItem="aEi-tB-H6P" secondAttribute="top" id="bG5-XW-JOZ"/>
+                            <constraint firstItem="Nr8-x8-Tba" firstAttribute="trailing" secondItem="aEi-tB-H6P" secondAttribute="trailing" id="qab-3H-5d6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aEi-tB-H6P"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Eok-oE-AcY"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Nr8-x8-Tba" id="wYs-NA-NSV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLP-5M-CAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4205.7971014492759" y="133.92857142857142"/>
+        </scene>
+        <!--View Challange View Controller-->
+        <scene sceneID="Sqe-en-0Ov">
+            <objects>
+                <viewController storyboardIdentifier="ViewChallangeViewController" definesPresentationContext="YES" modalPresentationStyle="overCurrentContext" id="a87-Nm-yDu" customClass="ViewChallangeViewController" customModule="FortniteItemShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0V8-Z2-3EE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPe-Ey-5nv" customClass="GradientView" customModule="FortniteItemShop" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="106" width="414" height="707"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEEK 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNB-ZB-O2G">
+                                        <rect key="frame" x="151" y="56" width="112.33333333333331" height="46"/>
+                                        <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="46"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e6r-Iz-vLK">
+                                        <rect key="frame" x="0.0" y="106" width="414" height="593"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gag-3A-8Uu">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fortnite-br-challenges-star" translatesAutoresizingMaskIntoConstraints="NO" id="ndt-GB-uHa">
+                                        <rect key="frame" x="156" y="-50" width="102" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="UJ1-qG-dMk"/>
+                                            <constraint firstAttribute="width" constant="102" id="xT2-8I-v36"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ndt-GB-uHa" firstAttribute="top" secondItem="KPe-Ey-5nv" secondAttribute="top" constant="-50" id="ExN-tq-VMY"/>
+                                    <constraint firstItem="ndt-GB-uHa" firstAttribute="centerX" secondItem="KPe-Ey-5nv" secondAttribute="centerX" id="FRi-yq-I9D"/>
+                                    <constraint firstItem="oNB-ZB-O2G" firstAttribute="top" secondItem="ndt-GB-uHa" secondAttribute="bottom" constant="16" id="O0n-1C-FiU"/>
+                                    <constraint firstAttribute="bottom" secondItem="e6r-Iz-vLK" secondAttribute="bottom" constant="8" id="Zte-fb-2oo"/>
+                                    <constraint firstItem="e6r-Iz-vLK" firstAttribute="leading" secondItem="KPe-Ey-5nv" secondAttribute="leading" id="eD3-3k-Q10"/>
+                                    <constraint firstAttribute="trailing" secondItem="e6r-Iz-vLK" secondAttribute="trailing" id="jog-iq-kre"/>
+                                    <constraint firstItem="oNB-ZB-O2G" firstAttribute="centerX" secondItem="e6r-Iz-vLK" secondAttribute="centerX" id="kbz-MZ-Yvt"/>
+                                    <constraint firstItem="e6r-Iz-vLK" firstAttribute="top" secondItem="oNB-ZB-O2G" secondAttribute="bottom" constant="4" id="mcN-lR-dNF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="1" alpha="0.54246040239726023" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowX">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowY">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mGS-K3-VI3" firstAttribute="trailing" secondItem="KPe-Ey-5nv" secondAttribute="trailing" id="8ej-8i-X5V"/>
+                            <constraint firstItem="KPe-Ey-5nv" firstAttribute="leading" secondItem="mGS-K3-VI3" secondAttribute="leading" id="9xK-3j-7yc"/>
+                            <constraint firstItem="mGS-K3-VI3" firstAttribute="bottom" secondItem="KPe-Ey-5nv" secondAttribute="bottom" constant="49" id="P8z-wP-dlI"/>
+                            <constraint firstItem="KPe-Ey-5nv" firstAttribute="top" secondItem="mGS-K3-VI3" secondAttribute="top" constant="62" id="y1A-YS-iXt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mGS-K3-VI3"/>
+                    </view>
+                    <connections>
+                        <outlet property="challangeWeek" destination="oNB-ZB-O2G" id="qjq-HM-f9X"/>
+                        <outlet property="collectioView" destination="e6r-Iz-vLK" id="KNg-Gc-7tg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICB-Cc-KLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5207.2463768115949" y="121.875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c4U-tu-lBy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QLa-lk-nsm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Jzq-5C-oYl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MpQ-NB-WXs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emV-CD-YMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3fJ-wi-AGa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1p3-5u-SuO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="sYw-zc-FM9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7g2-Rc-g1Y" kind="relationship" relationship="rootViewController" id="zKc-Ct-mGs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dph-4R-R63" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lgd-qq-iaI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UqH-pl-RYE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="raT-wM-J5n">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lFF-OA-ST4" kind="relationship" relationship="rootViewController" id="pD7-fq-UO5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oif-hk-IT2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3441" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fortnite-br-challenges-star" width="401" height="365"/>
+    </resources>
+</document>

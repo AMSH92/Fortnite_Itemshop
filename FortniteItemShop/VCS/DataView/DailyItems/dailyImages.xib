@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DailyImagesCell" id="gXv-6g-zPV" customClass="DailyImagesCell" customModule="FortniteItemShop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="396"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="396"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="615-n3-YCv">
+                        <rect key="frame" x="0.0" y="0.0" width="421" height="396"/>
+                    </imageView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5jk-aS-Ifz">
+                        <rect key="frame" x="191" y="339" width="39" height="37"/>
+                    </pageControl>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5jk-aS-Ifz" secondAttribute="bottom" constant="20" id="0Qa-kw-kR4"/>
+                <constraint firstAttribute="trailing" secondItem="615-n3-YCv" secondAttribute="trailing" id="6FF-gB-bxg"/>
+                <constraint firstAttribute="bottom" secondItem="615-n3-YCv" secondAttribute="bottom" id="6cB-pr-6UY"/>
+                <constraint firstItem="615-n3-YCv" firstAttribute="top" secondItem="gXv-6g-zPV" secondAttribute="top" id="Wfy-ux-YOn"/>
+                <constraint firstItem="615-n3-YCv" firstAttribute="leading" secondItem="gXv-6g-zPV" secondAttribute="leading" id="tJi-Ep-QgC"/>
+                <constraint firstItem="5jk-aS-Ifz" firstAttribute="centerX" secondItem="615-n3-YCv" secondAttribute="centerX" id="vLe-tQ-eQu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="xjR-Vy-J72"/>
+            <size key="customSize" width="421" height="396"/>
+            <connections>
+                <outlet property="itemImages" destination="615-n3-YCv" id="51s-Ga-T7A"/>
+                <outlet property="pages" destination="5jk-aS-Ifz" id="pHt-dT-Cx2"/>
+            </connections>
+            <point key="canvasLocation" x="21.600000000000001" y="6.2968515742128943"/>
+        </collectionViewCell>
+    </objects>
+</document>
